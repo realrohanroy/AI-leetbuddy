@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "LeetBuddy Helper",
+  "version": "1.0",
+  "description": "A simple extension to prove our setup works.",
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": ["http://localhost:3000/"],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon/standard.png",
+      "icon/standard.png",
+      "icon/workout.png",
+      "icon/coffee.png",
+      "icon/headphones.png",
+      "icon/sleeping.png",
+      "icon/mondaymor.jpg",
+      "icon/battery-low.png",
+      "icon/charging.png",
+      "icon/side-eye.png"
+    ],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ]
+}
